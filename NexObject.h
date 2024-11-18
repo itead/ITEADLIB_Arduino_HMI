@@ -76,6 +76,7 @@ private: /* data */
     uint8_t __pid; /* Page ID */
     uint8_t __cid; /* Component ID */
     const char *__name; /* An unique name */
+    String __name_str; /* space to store the name */
 };
 /**
  * @}

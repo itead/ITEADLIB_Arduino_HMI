@@ -18,7 +18,8 @@ NexObject::NexObject(uint8_t pid, uint8_t cid, const char *name)
 {
     this->__pid = pid;
     this->__cid = cid;
-    this->__name = name;
+    this->__name_str = name;
+    this->__name = __name_str.c_str();
 }
 
 uint8_t NexObject::getObjPid(void)
